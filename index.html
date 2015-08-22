@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Product Pitch</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data Product Pitch">
+  <meta name="author" content="Written by Micaela">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Data Product Pitch</h1>
+    <h2>Changing the Way You Visualize the States Dataset</h2>
+    <p>Written by Micaela<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style> .title-slide {
+       background-color: #6C2DC7; 
+           } </style>
+           
+<style> .title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #000000;  /* ; #EF5150*/
+} </style>
+
+<!-- Limit image width and height -->
+<style type='text/css'>
+img {
+    max-height: 500px;
+    max-width: 964px;
+}
+</style>
+
+<!-- Center image on slide -->
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+
+<script type='text/javascript'>
+$(function() {
+    $("p:has(img)").addClass('centered');
+});
+</script>
+
+<h2>Problem</h2>
+
+<ul>
+<li>You find a new dataset and are excited to see what is inside</li>
+<li>Where to start?</li>
+<li>Which is most interesting?</li>
+<li>How can I quickly and easily see bivariate relations between the variables?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The states dataset in R contains data from the 1970s on all 50 United States (first 10 rows shown below).  I would like to visualize the different relations amongst these variables.   </p>
+
+<!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+
+<!-- Sat Aug 22 00:41:54 2015 -->
+
+<table border=1>
+<tr> <th>  </th> <th> Population </th> <th> Income </th> <th> Illiteracy </th> <th> Life Exp </th> <th> Murder </th> <th> HS Grad </th> <th> Frost </th> <th> Area </th>  </tr>
+  <tr> <td align="right"> Alabama </td> <td align="right"> 3615.00 </td> <td align="right"> 3624.00 </td> <td align="right"> 2.10 </td> <td align="right"> 69.05 </td> <td align="right"> 15.10 </td> <td align="right"> 41.30 </td> <td align="right"> 20.00 </td> <td align="right"> 50708.00 </td> </tr>
+  <tr> <td align="right"> Alaska </td> <td align="right"> 365.00 </td> <td align="right"> 6315.00 </td> <td align="right"> 1.50 </td> <td align="right"> 69.31 </td> <td align="right"> 11.30 </td> <td align="right"> 66.70 </td> <td align="right"> 152.00 </td> <td align="right"> 566432.00 </td> </tr>
+  <tr> <td align="right"> Arizona </td> <td align="right"> 2212.00 </td> <td align="right"> 4530.00 </td> <td align="right"> 1.80 </td> <td align="right"> 70.55 </td> <td align="right"> 7.80 </td> <td align="right"> 58.10 </td> <td align="right"> 15.00 </td> <td align="right"> 113417.00 </td> </tr>
+  <tr> <td align="right"> Arkansas </td> <td align="right"> 2110.00 </td> <td align="right"> 3378.00 </td> <td align="right"> 1.90 </td> <td align="right"> 70.66 </td> <td align="right"> 10.10 </td> <td align="right"> 39.90 </td> <td align="right"> 65.00 </td> <td align="right"> 51945.00 </td> </tr>
+  <tr> <td align="right"> California </td> <td align="right"> 21198.00 </td> <td align="right"> 5114.00 </td> <td align="right"> 1.10 </td> <td align="right"> 71.71 </td> <td align="right"> 10.30 </td> <td align="right"> 62.60 </td> <td align="right"> 20.00 </td> <td align="right"> 156361.00 </td> </tr>
+  <tr> <td align="right"> Colorado </td> <td align="right"> 2541.00 </td> <td align="right"> 4884.00 </td> <td align="right"> 0.70 </td> <td align="right"> 72.06 </td> <td align="right"> 6.80 </td> <td align="right"> 63.90 </td> <td align="right"> 166.00 </td> <td align="right"> 103766.00 </td> </tr>
+  <tr> <td align="right"> Connecticut </td> <td align="right"> 3100.00 </td> <td align="right"> 5348.00 </td> <td align="right"> 1.10 </td> <td align="right"> 72.48 </td> <td align="right"> 3.10 </td> <td align="right"> 56.00 </td> <td align="right"> 139.00 </td> <td align="right"> 4862.00 </td> </tr>
+  <tr> <td align="right"> Delaware </td> <td align="right"> 579.00 </td> <td align="right"> 4809.00 </td> <td align="right"> 0.90 </td> <td align="right"> 70.06 </td> <td align="right"> 6.20 </td> <td align="right"> 54.60 </td> <td align="right"> 103.00 </td> <td align="right"> 1982.00 </td> </tr>
+  <tr> <td align="right"> Florida </td> <td align="right"> 8277.00 </td> <td align="right"> 4815.00 </td> <td align="right"> 1.30 </td> <td align="right"> 70.66 </td> <td align="right"> 10.70 </td> <td align="right"> 52.60 </td> <td align="right"> 11.00 </td> <td align="right"> 54090.00 </td> </tr>
+  <tr> <td align="right"> Georgia </td> <td align="right"> 4931.00 </td> <td align="right"> 4091.00 </td> <td align="right"> 2.00 </td> <td align="right"> 68.54 </td> <td align="right"> 13.90 </td> <td align="right"> 40.60 </td> <td align="right"> 60.00 </td> <td align="right"> 58073.00 </td> </tr>
+   </table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Solution</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>With the Shiny app &quot;Visualizing States Dataset,&quot; it is easy to select two variables from the states dataset and instantly see their bivariate relation.  In addition, the names of the states are given as points, allowing you to quickly see where each state falls in the correlation.</p>
+
+<p><img src="assets/img/ScreenShot1.png" alt="&#39;Pic1&#39;"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>&quot;Visualizing States Dataset&quot; is a useful data product that can be customized for any dataset you find yourself wanting to explore.</p>
+
+<ul>
+<li>By easily viewing the bivariate relations amongst the dataset&#39;s variables, you can make a plan for additional analyses.</li>
+<li>You might also see surprising and interesting results just in the scatterplots.<br>
+
+<ul>
+<li>On the previous page, for example, you might have been shocked by the strong positive relation between illiteracy and murder rate.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Example'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Solution'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

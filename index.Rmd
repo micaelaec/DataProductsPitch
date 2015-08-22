@@ -1,0 +1,79 @@
+---
+title       : Data Product Pitch
+subtitle    : Changing the Way You Visualize the States Dataset
+author      : Written by Micaela
+framework   : io2012      # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow     # 
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+    
+---  
+
+
+<style> .title-slide {
+       background-color: #6C2DC7; 
+           } </style>
+           
+<style> .title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #000000;  /* ; #EF5150*/
+} </style>
+
+<!-- Limit image width and height -->
+<style type='text/css'>
+img {
+    max-height: 500px;
+    max-width: 964px;
+}
+</style>
+
+<!-- Center image on slide -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script type='text/javascript'>
+$(function() {
+    $("p:has(img)").addClass('centered');
+});
+</script>
+
+
+
+## Problem
+
+- You find a new dataset and are excited to see what is inside
+- Where to start?
+- Which is most interesting?
+- How can I quickly and easily see bivariate relations between the variables?
+
+--- 
+
+## Example
+
+The states dataset in R contains data from the 1970s on all 50 United States (first 10 rows shown below).  I would like to visualize the different relations amongst these variables.   
+```{r header, echo=FALSE, results='asis'}
+require(datasets)
+require(xtable)
+data(state)
+print(xtable(state.x77[1:10,]), type = "html")
+```
+
+--- 
+
+
+## Solution
+With the Shiny app "Visualizing States Dataset," it is easy to select two variables from the states dataset and instantly see their bivariate relation.  In addition, the names of the states are given as points, allowing you to quickly see where each state falls in the correlation.
+
+!['Pic1'](assets/img/ScreenShot1.png)
+
+---
+
+
+## Conclusion
+"Visualizing States Dataset" is a useful data product that can be customized for any dataset you find yourself wanting to explore.
+
+- By easily viewing the bivariate relations amongst the dataset's variables, you can make a plan for additional analyses.
+- You might also see surprising and interesting results just in the scatterplots.  
+  - On the previous page, for example, you might have been shocked by the strong positive relation between illiteracy and murder rate.
+
+
+
